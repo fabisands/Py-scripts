@@ -1,5 +1,5 @@
-print("Generador de cadenas de ADN")
-print("Escriba una serie de letras de bases nitrogenadas (CGTA): ")
+print("DNA strings generator")
+print("Write a series of letters of nitrogenous bases (CGTA): ")
 S53 = input().upper()
 
 for e in S53:
@@ -30,7 +30,7 @@ for e in S35_7:
 
 print()
 
-print("La doble hélice de ADN es:")
+print("The double helix of DNA is:")
 print("5'- " + S53 + " -3'")
 print("3'- " + S35 + " -5'")
 
@@ -45,11 +45,11 @@ if "A" in S53:
 
 print()
 
-print("En la cadena dada por el usuario hay un total de:")
-print(count_C1, "citocinas")
-print(count_G1, "guaninas")
-print(count_T1, "timinas")
-print(count_A1, "adeninas")
+print("In the chain given by the user, there is a total of:")
+print(count_C1, "cytokines")
+print(count_G1, "guanines")
+print(count_T1, "thymines")
+print(count_A1, "adenines")
 
 if "C" in S35:
     count_C2 = S35.count("C")
@@ -62,11 +62,11 @@ if "A" in S35:
 
 print()
 
-print("En la cadena complementaria hay un total de:")
-print(count_C2, "citocinas")
-print(count_G2, "guaninas")
-print(count_T2, "timinas")
-print(count_A2, "adeninas")
+print("In the complementary chain, there is a total of:")
+print(count_C2, "cytokines")
+print(count_G2, "guanines")
+print(count_T2, "thymines")
+print(count_A2, "adenines")
 
 count_C = count_C1 + count_C2
 count_G = count_G1 + count_G2
@@ -75,8 +75,8 @@ count_A = count_A1 + count_A2
 
 print()
 
-print("En la doble hélice de ADN hay un total de:")
-print(count_C, "citocinas")
-print(count_G, "guaninas")
-print(count_T, "timinas")
-print(count_A, "adeninas")
+print("In the double helix of DNA, there is a total of:")
+print(count_C, "cytokines")
+print(count_G, "guanines")
+print(count_T, "thymines")
+print(count_A, "adenines")

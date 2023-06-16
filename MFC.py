@@ -1,37 +1,38 @@
+# Let's find how much material do we need to make a solution for a MFC, working with acetic acid or gluscose
+
 print("-" * 130)
-print("Tenga en cuenta que para estos cálculos se usará el Sistema Internacional, por lo que los volúmenes estarán")
-print("en metros cúbicos (m3), las masas en kilogramos (Kg) y las densidades en kilogramos por metro cúbico (Kg/m3).")
-print("Igualmente, para los decimales se empleará el punto (.) mas no la coma (,).")
+print("Keep in mind that for these calculations the International System will be used, so the volumes will be in cubic meters (m3),")
+print("the masses in kilograms (Kg) and the densities in kilograms per cubic meter (Kg/m3). Likewise, for decimals, the point (.) will be used but not the comma (,).")
 print()
-print("NOTA: para dar finalización al programa, introduzca el número cero (0) cuando le pida ingresar algún dato.")
-print("Para introducir números en notación científica, introduzca el número reducido seguido de *10** seguido del número exponente correspondiente; ejemplos:")
+print("NOTE: to end the program, enter the number zero (0) when it asks you to enter any data.")
+print("To enter numbers in scientific notation, enter the reduced number followed by *10** followed by the corresponding exponent number; examples:")
 print("12310.258 = 12.31*10**3")
 print("0.0001231 = 12.31*10**-5")
 print("-" * 130)
-om = float(input("¿Qué tipo de material orgánico va a emplear? Si es ácido acético introduzca el número 1, y si es glucosa introduzca el 2: "))
-# "om" es "organic material" o "material orgánico"
+om = float(input("What type of organic material will you use? If it is acetic acid, enter the number 1, and if it is glucose, enter the number 2: "))
+# "om" is "organic material"
 while om != 0:
     if om == 1:
-        vol_aa = float(input("Introduzca el volumen de ácido acético a utilizar (m3): ")) # "vol_aa" es "volume of acetic acid" o "volumen de ácido acético"
-        molar_aa = float(input("Introduzca la concentración molar del ácido acético a utilizar (M): ")) # M = moles de soluto / Litros de solución
+        vol_aa = float(input("Enter the volume of acetic acid to use (m3): ")) # "vol_aa" iss "volume of acetic acid"
+        molar_aa = float(input("Enter the molar concentration of acetic acid to use (M): ")) # M = moles of solute / Liters of solution
         mol_aa = molar_aa * vol_aa
-        Ac = 6.02214076*10**23 # "Ac" es "Avogadro's constant" o "Constante de Avogadro"
-        # 1 mol es igual a 6.02214076x10^23 unidades
-        mq_aa = mol_aa * Ac # "mq_aa" es "molecules quantity of acetic acid" o "cantidad de moléculas de ácido acético"
-        # 1 molécula de ácido acético + 2 de agua producen 2 moléculas de CO2 + 8 protones (H+) + 8 electrones (e-)
-        mq_w = mq_aa * 2 # "mq_w" es "molecules quantity of water" o "cantidad de moléculas de agua" que se necesitan.
-        mol_w = mq_w / Ac # "mol_w" es "moles of water" o "moles de agua"
-        # 1 mol de agua pesa 1 gramo, y 1 gramo es equivalente a 1 mL
-        vol_w = mol_w * 1000 * 1000 # "vol_w" es "volumen of water" o "volumen de agua" que se necesita
-        # Ya que las mol_w se multiplica por 1 gramo y se divide por 1 mol, obteniéndose los gramos, y esos gramos son iguales a los mL
-        # Así que para obtener los litros, se multiplican esos mL por 1000, y luego se multiplica de nuevo por 1000 para obtener los m3.
-        print("Cantidad de H2O que se necesita para {} litros de ácido acético: {} litros.".format(vol_aa, vol_w))
-        mq_CO2 = mq_aa * 2 # "mq_CO2" es "molecules quantity of CO2" o "cantidad de moléculas de CO2"
-        mol_CO2 = mq_CO2 / Ac # "mol_CO2" es " moles of CO2" o "moles de CO2"
+        Ac = 6.02214076*10**23 # "Ac" is "Avogadro's constant"
+        # 1 mol is equal to 6.02214076x10^23 units
+        mq_aa = mol_aa * Ac # "mq_aa" is "molecules quantity of acetic acid"
+        # 1 molecule of acetic acid + 2 of water produce 2 nolecules of CO2 + 8 protons (H+) + 8 electrons (e-)
+        mq_w = mq_aa * 2 # "mq_w" is "molecules quantity of water"
+        mol_w = mq_w / Ac # "mol_w" is "moles of water"
+        # 1 mol of water weighs 1 gram, and 1 gram is equivalent to 1 mL
+        vol_w = mol_w * 1000 * 1000 # "vol_w" is "volumen of water"
+        # Since the mol_w is multiplied by 1 gram and divided by 1 mol, obtaining the grams, and those grams are equal to the mL
+        # So to get the liters, you multiply that mL by 1000, and then multiply again by 1000 to get the m3.
+        print("Quantity of H2O needed to {} liters of acetic acid: {} liters.".format(vol_aa, vol_w))
+        mq_CO2 = mq_aa * 2 # "mq_CO2" is "molecules quantity of CO2"
+        mol_CO2 = mq_CO2 / Ac # "mol_CO2" is " moles of CO2"
         break
     elif om == 2:
-        mass = float(input("Introduzca la masa de glucosa a utilizar: "))
+        mass = float(input("Enter the mass of glucose to use (kg): "))
         break
     else:
-        print("El valor ingresado no es ni 1 ni 2. Por favor introduzca solamente alguno de esos dos números correspondiendo a la materia orgánica a utilizar.")
-        om = float(input("¿Qué tipo de material orgánico va a emplear? Si es ácido acético introduzca el número 1, y si es glucosa introduzca el 2: "))
+        print("The entered value is neither 1 nor 2. Please enter only one of those two numbers corresponding to the organic matter to be used.")
+        om = float(input("What type of organic material will you use? If it is acetic acid, enter the number 1, and if it is glucose, enter the number 2: "))

@@ -1,14 +1,14 @@
-# Vamos a comprobar si un año es bisiesto o no.
-# Un año es bisiesto si es divisible entre 4 pero no es múltiplo de 100 a no ser que lo sea de 400.
+# Let's to prove if a year is a leap-year or not.
+# A year is a leap one if it is divisible by 4 but is not a multiple of 100 unless it is a multiple of 400.
 
-year = int(input("Año: "))
+year = int(input("Year: "))
 if year % 4 == 0:
     if year % 100 == 0:
         if year % 400 == 0:
-            print("El año {} es bisiesto".format(year))
+            print("The year {} is a leap one".format(year))
         else:
-            print("El año {} no es bisiesto".format(year))
+            print("The year {} is not a leap one".format(year))
     else:
-        print("El año {} es bisiesto".format(year))
+        print("The year {} is a leap one".format(year))
 else:
-    print("El año {} no es bisiesto".format(year))
+    print("The year {} is not a leap one".format(year))
