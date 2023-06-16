@@ -1,10 +1,8 @@
-# Tomar una fecha real y transformarla a una fecha ficticia donde se cuenta desde el 1 de enero del año 1
-# y si el año solo tuviera 10 meses y si no exisitieran los meses de julio y agosto.
+# Take a real date and turn it into a dummy date where it is count from January 1, year 1; and if every year would have 10 months (without July nor August).
 
-
-DAY = int(input("Escribe un día: "))
-MONTH = int(input("Escribe un mes: "))
-YEAR = int(input("Escribe un año: "))
+DAY = int(input("Write a day: "))
+MONTH = int(input("Write a month: "))
+YEAR = int(input("Write a year: "))
 
 DAYS_IN_YEAR = (YEAR - 1) * 365 + (YEAR - 1) // 4
 
