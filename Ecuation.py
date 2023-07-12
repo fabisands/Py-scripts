@@ -6,3 +6,5 @@ if A != 0:
     print("The solution is x =", sol)
 else:
     print("There is no ecuation to solve because A = 0")
+
+# comment
