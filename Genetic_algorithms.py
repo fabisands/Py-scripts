@@ -27,8 +27,8 @@ Clostridium_septicum = d.replace("\n", "")
 C_septicum_size = len(Clostridium_septicum)
 print("La cantidad de nucleótidos del genoma de Clostridium septicum es", C_septicum_size)
 
-# print(Clostridium_perfringens) --> imprime toda la cadena
-# print(Clostridium_perfringens[0:10]) --> imprime los caracteres del índice 0 al índice 9
+# print(Clostridium_perfringens) --> print all the string
+# print(Clostridium_perfringens[0:10]) --> print the caracteres from index 0 to index 9
 
 count = 0
 for i in range(len(Clostridium_perfringens)):
