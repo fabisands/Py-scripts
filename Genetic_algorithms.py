@@ -4,12 +4,12 @@
 # import modules
 from Bio import SeqIO
 
-# Methods:
-# variable.read() --> puts your the file data into one string variable
-# readline() --> one line + incremental reading of your file
-# readlines() --> returns the lines a list of strings
-
 # read the FASTA files
+    # Methods:
+        # variable.read() --> puts your the file data into one string variable
+        # readline() --> one line + incremental reading of your file
+        # readlines() --> returns the lines a list of strings
+    # Let's to use the first one: variable.read()
 
 x = open(r'C:\Users\faren\OneDrive - Universidad de la Amazonia\Documents\VSCode files\Py-scripts\Genomes\Clostridium_perfringens.fna', 'r')
 a = x.read()
@@ -27,6 +27,8 @@ Clostridium_septicum = d.replace("\n", "")
 C_septicum_size = len(Clostridium_septicum)
 print("La cantidad de nucleótidos del genoma de Clostridium septicum es", C_septicum_size)
 
+# find and print the shortest one
+
 if C_perfingens_size <= C_septicum_size:
     short_one = C_perfingens_size
 else:
@@ -34,10 +36,14 @@ else:
 
 print("Se tomarán los primeros", short_one, "nucleótidos de cada cadena ya que esa es la cantidad a comparar del genoma más corto")
 
+# Do the counting
+
 count = 0
 for i in range(C_perfingens_size):
     if Clostridium_perfringens[i] == Clostridium_septicum[i]:
         count += 1
+
+# find and print the percentage of similarity
 
 result = round(((count/short_one)*100), 2)
 
