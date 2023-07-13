@@ -8,4 +8,3 @@ for i in range(TY):
     BASE += BASE * (RENT / 100) + SAVE_Y
     print(round(BASE, 2))
 
-# comment

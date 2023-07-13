@@ -11,4 +11,3 @@ while idx <= 20: # establecemos una cota para que el bucle no sea infinito
     print("El término {} ocupa la posición {}".format(Fib, idx))
     idx += 1 # incrementamos el valor del índice
 
-# comment

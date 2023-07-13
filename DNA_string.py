@@ -81,4 +81,3 @@ print(count_G, "guanines")
 print(count_T, "thymines")
 print(count_A, "adenines")
 
-# comment

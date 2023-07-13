@@ -13,4 +13,3 @@ if year % 4 == 0:
 else:
     print("The year {} is not a leap one".format(year))
 
-# comment

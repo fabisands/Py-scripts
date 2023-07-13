@@ -21,4 +21,3 @@ for i in range(0, MONTH - 1):
 COUNT_DAYS = DAYS_IN_YEAR + DAYS_IN_MONTH + DAY
 print(COUNT_DAYS)
 
-# comment

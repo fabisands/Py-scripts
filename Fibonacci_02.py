@@ -13,4 +13,3 @@ while Fib <= 500000: # establecemos una cota para que el bucle no sea infinito
         break     # salimos del bucle
     idx += 1 # incrementamos el valor del índice
 
-# comment

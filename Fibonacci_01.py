@@ -11,4 +11,3 @@ while pos <= count: # will continue to search for the values of the positions de
     Fib_b = Fib_c # likewise, the current value takes the value of the sum (scrolls)
     Fib_c = Fib_a + Fib_b # while the value of the sum keeps adding to keep assigning its value to the current one
 
-# comment

@@ -7,4 +7,3 @@ if A != 0:
 else:
     print("There is no ecuation to solve because A = 0")
 
-# comment
