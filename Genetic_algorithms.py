@@ -27,15 +27,19 @@ Clostridium_septicum = d.replace("\n", "")
 C_septicum_size = len(Clostridium_septicum)
 print("La cantidad de nucleótidos del genoma de Clostridium septicum es", C_septicum_size)
 
-# print(Clostridium_perfringens) --> print all the string
-# print(Clostridium_perfringens[0:10]) --> print the caracteres from index 0 to index 9
+if C_perfingens_size <= C_septicum_size:
+    short_one = C_perfingens_size
+else:
+    short_one = C_septicum_size
+
+print("Se tomarán los primeros", short_one, "nucleótidos de cada cadena ya que esa es la cantidad a comparar del genoma más corto")
 
 count = 0
-for i in range(len(Clostridium_perfringens)):
+for i in range(C_perfingens_size):
     if Clostridium_perfringens[i] == Clostridium_septicum[i]:
         count += 1
 
-result = round(((count/3275499)*100), 2)
+result = round(((count/short_one)*100), 2)
 
 print("El porcentaje de similitud de los genomas de las especies Clostridium perfringens y Clostridium septicum es", str(result) + "%")
 
