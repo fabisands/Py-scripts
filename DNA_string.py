@@ -1,3 +1,6 @@
+# Give a short chain of nitrogenous bases
+# The script creates the double helix and tell the amount of cytokines, guanines, thymines and adenines that there are in it.
+
 print("DNA strings generator")
 print("Write a series of letters of nitrogenous bases (CGTA): ")
 S53 = input().upper()
