@@ -1,7 +1,8 @@
-# Take a real date and turn it into a dummy date where it is count from January 1, year 1; and if every year would have 10 months (without July nor August).
+# Take a real date and shoow the amount of days that have passed since January 1 year 1. 
+# Then turn it into a dummy date where it is count from January 1, year 1; and if every year would have 10 months (without July nor August).
 
-DAY = int(input("Write a day: "))
-MONTH = int(input("Write a month: "))
+MONTH = int(input("Write the number of a specific month: "))
+DAY = int(input("Write the number of a specific day: "))
 YEAR = int(input("Write a year: "))
 
 DAYS_IN_YEAR = (YEAR - 1) * 365 + (YEAR - 1) // 4
@@ -19,5 +20,5 @@ for i in range(0, MONTH - 1):
         DAYS_IN_MONTH += 31
 
 COUNT_DAYS = DAYS_IN_YEAR + DAYS_IN_MONTH + DAY
-print(COUNT_DAYS)
+print("Since January 1 year 1, the amount of days that have passed is", COUNT_DAYS)
 
