@@ -1,15 +1,13 @@
 # Compare and tell the percentage of coincidence of the first 810 nucleotides from 2 species of bacteria: Bacteroides fragilis & Bacteroides melaninogenicus
 # FASTA sequencies taken from NCBI
 
-# import modules
 from Bio import SeqIO
 
-# read the FASTA files
-    # Methods:
-        # variable.read() --> puts your the file data into one string variable
-        # readline() --> one line + incremental reading of your file
-        # readlines() --> returns the lines a list of strings
-    # Let's to use the first one: variable.read()
+# Methods for reading FASTA files:
+    # variable.read() --> puts the file data into one string variable
+    # readline() --> one line + incremental reading of the file
+    # readlines() --> returns the lines a list of strings
+# Method to use: variable.read()
 
 x = open(r'C:\Users\faren\OneDrive - Universidad de la Amazonia\Documents\VSCode files\Py-scripts\Genomes\Clostridium_perfringens.fna', 'r')
 a = x.read()
