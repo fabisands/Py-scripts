@@ -1,8 +1,7 @@
 # Give a short chain of nitrogenous bases
-# The script creates the double helix and tell the amount of cytokines, guanines, thymines and adenines that there are in it.
+# The script creates the double helix and tells the amount of cytokines, guanines, thymines and adenines that there are in it.
 
-print("DNA strings generator")
-print("Write a series of letters of nitrogenous bases (CGTA): ")
+print("DNA STRINGS GENERATOR \nWrite a series of letters of nitrogenous bases (CGTA):")
 S53 = input().upper()
 
 for e in S53:
@@ -48,7 +47,7 @@ if "A" in S53:
 
 print()
 
-print("In the chain given by the user, there is a total of:")
+print("In the chain given by the user, there are:")
 print(count_C1, "cytokines")
 print(count_G1, "guanines")
 print(count_T1, "thymines")
@@ -65,7 +64,7 @@ if "A" in S35:
 
 print()
 
-print("In the complementary chain, there is a total of:")
+print("In the complementary chain, there are:")
 print(count_C2, "cytokines")
 print(count_G2, "guanines")
 print(count_T2, "thymines")
@@ -78,7 +77,7 @@ count_A = count_A1 + count_A2
 
 print()
 
-print("In the double helix of DNA, there is a total of:")
+print("In the double helix of DNA, there are:")
 print(count_C, "cytokines")
 print(count_G, "guanines")
 print(count_T, "thymines")
