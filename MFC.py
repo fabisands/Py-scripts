@@ -1,4 +1,4 @@
-# Let's find how much material do we need to make a solution for a MFC, working with acetic acid or gluscose
+# Let's find how much material do we need to make a solution for a MFC, working with acetic acid or glucose
 
 print("-" * 130)
 print("Keep in mind that for these calculations the International System will be used, so the volumes will be in cubic meters (m3),")
