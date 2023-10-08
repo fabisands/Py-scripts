@@ -1,4 +1,4 @@
-# Write a script to generate an aleatoric code with a letter and a number (like a BINGO code)
+# Write a script to generate an aleatoric code with a letter and a number
 
 import random
 
