@@ -17,7 +17,7 @@ random_number = random.randint(min_number, max_number)
 random_number_str = str(random_number).zfill(2)
 
 # Create the random code by combining the letter and number
-random_code = f"{random_letter}{random_number_str}" ########## averiguar por qué f"{x}{y}" y no sólo x + y
+random_code = f"{random_letter}{random_number_str}"
 
 # Display the random code
 print("Random Code:", random_code)
